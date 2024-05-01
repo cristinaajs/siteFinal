@@ -20,4 +20,5 @@ cor usada
 ![cor](https://github.com/cristinaajs/siteFinal/assets/101849397/65885f04-8d75-40a4-8aee-20378828a575)
 
 Link Figma: https://www.figma.com/file/yOKa7I4v5bMAEOcbNJZRSF/Esbo%C3%A7o-Site-Review-de-Filme?type=design&mode=design&t=cKldahTsZQIjTIBs-1 
+
 Fontes Usadas: Arial, Helvetica, Sans Serif.
