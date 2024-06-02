@@ -3,9 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    
+    <title>Linguagem de Cinema</title>
 </head>
 <body>
+
+<!-- Barra de Menu -> logo/ dois links princiais/ menu barra recolhivel/ pesquisar mais inpure/ botão de entrada -->
+
+    <div class="topbar">
+      <section class="container">
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a href="./index.html"><img src="../img/Linguagem de cinema.png" alt="Linguagem de Cinema" height="75"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav navbar-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Principal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pagina4Criticas.html"> Últimas Críticas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pagina2Cartaz.html">Em Cartaz</a></li>
+                    <li><a class="dropdown-item" href="./pagina3Noticias.html">Notícias de Cinema</a></li>
+                    <li><a class="dropdown-item" href="./pagina4Criticas.html">Críticas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./pagina5Trailers.html">Melhores Trailers</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Digite o Título do Filme" aria-label="Search">
+                <button class="btn btn-outline-purple" type="submit">Pesquisar</button>
+              </form>
+              <div class="d-grid gap-2 d-lg-block custom-margin">
+                <button class="btn btn-primary" type="login-button">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </section>
+    </div>
+
+    <!-- <Imagem do Banner> -->
     
+    <div id="carouselExampleCaptions" class="carousel slide mb-4">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/banners/pantera_banner.jpg" class="d-block w-100" alt="blackPanther_banner">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Black Panther: Wakanda Forever</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/banners/pobre_banner.png" class="d-block w-100" alt="poorThings_banner">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Poor Things</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../img/banners/maxine_banner.jpg" class="d-block w-100" alt="maxine">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Container com as imagens que direcionam para página do blog do "Em Cartaz" -->
+
+    <div class="container_Cartaz">
+
+      <h2 class="section_Titulo"> Títulos em Cartaz</h2>
+
+      <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 justify-content-center">
+          
+          <div class="col-md-3 col-sm-6">
+            <a href="./pagina2Cartaz.html"><img src="../img/cartaz/cartaz1.png" alt="Abigail" ></a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/cartaz/cartaz2.png" alt="Challangers" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/cartaz/cartaz3.png" alt="Maxine" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/cartaz/cartaz4.png" alt="KungFu4" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container com imagens que direcionam para a página "Notícias Cinematográficas" -->
+    <div class="container_Noticias">
+
+      <h2 class="section_Titulo"> Noticias Cinematográficas </h2>
+
+      <div class="container">
+        <div class="row  row-cols-2 row-cols-lg-2 g-2 g-lg-3 justify-content-center">
+
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../img/noticias/noticia1-monkeyman-pw-poster.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="../img/noticias/noticia2-wrb-poster.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container com imagens que direcionam para página "Críticas Cinematográficas" -->
+
+    <div class="container_Criticas">
+
+      <h2 class="section_Titulo"> Críticas Cinematográficas</h2>
+
+      <div class="container text-center">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 justify-content-center">
+          
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/criticas/critica1.png" alt="PoorThings" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/criticas/critica2.png" alt="Garfield" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/criticas/critica3.png" alt="Furia" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/criticas/critica4.jpg" alt="WitchW" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- container com banner e com imagens que direcionam para os vídeos de trailers -->
+
+    <div class="container_Trailers">
+
+      <h2 class="section_Titulo mb-0"> Melhores Trailers</h2>
+
+      <div class="container text-center ">
+        <a href="#" id="open_Trailer">
+          <img src="../img/trailers/trailer 1.jpg" class="img-fluid" alt="maxineTrailer">
+        </a>
+        <iframe id="trailer" width="100%" height="426" src="https://www.youtube.com/embed/y0uS3t6nFgY?si=RCsUAoWd46xV-3pT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 pt-3 justify-content-center">
+          
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/trailers/trailermelhor1.jpg" alt="Aprofecia" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/trailers/trailermelhor2.jpg" alt="CivilWar" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/trailers/trailermelhor3.jpg" alt="WakandaForever" >
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="../img/trailers/trailermelhor4.jpg" alt="LateNight" >
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- barra final com os icones de rede social, outras informações, e para deixar o e-mail -->
+
+  <div class="container footer">
+    <footer class="d-flex flex-wrap row justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0">© 2024 Linguagem de Cinema</p>
+
+      <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <ul class="nav col-md-4 list-unstyled d-flex">
+          <li class="ms-3"><a class="" href="#"><i class="bi bi-twitter" style="font-size: 24px;"></i></a></li>
+          <li class="ms-3"><a class="" href="#"><i class="bi bi-instagram" style="font-size: 24px;"></i></a></li>
+          <li class="ms-3"><a class="" href="#"><i class="bi bi-facebook" style="font-size: 24px;"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <ul class="nav navlista">
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Opiniões</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Novidades</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 ">Sobre Nós</a></li>
+        </ul>
+      </div>
+
+    </footer>
+    <script src="script.js"></script>
+  </div>
 </body>
 </html>
