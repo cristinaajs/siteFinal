@@ -1,5 +1,17 @@
-document.getElementById('open_Trailer').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('trailer').style.display = 'block';
-    document.getElementById('open_Trailer').style.display = 'none';
-})
+
+// Validar Inscrição
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })

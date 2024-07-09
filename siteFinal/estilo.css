@@ -98,6 +98,15 @@ margin-left: 10px;
     display: none;
 }
 
+#registrar {
+    text-decoration: none;
+    color:rgb(16,9,19) ;
+}
+
+#registrar:hover{
+    color: rgb(141,118,154);
+}
+
 @media (max-width: 975px) {
     .custom-margin {
         margin-top: 10px;
@@ -123,6 +132,15 @@ margin-left: 10px;
     justify-content: center;
     align-items: center;
     height: 100%; 
+}
+
+.star-filled{
+    color: gold;
+}
+
+.star-inactive{
+    color:#cecece
+
 }
 
 
